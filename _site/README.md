@@ -1,17 +1,10 @@
 # Free Geek Website Prototype
----
+
 ### About
 This is a prototype website for the non-profit organization Free Geek hosted on GitHub Pages [here](http://kp646576.github.io/Free-Geek-Prototype) as a way to see what the [original website](http://www.freegeek.org/) would look like if the front page design was extended to additional pages.
 
-## Motivation
+### Motivation
 One day while browsing Free Geek's website I had noticed that their main page had been updated to a more modern design. I loved the new design, but noticed that the other pages on their website had yet to be updated. As a previous Free Geek volunteer, I thought that this would be a great opportunity to help the organization by developing a prototype of an updated website to show the Free Geek staff and volunteer to assist in updating their website. 
-
-### Added Features
-**Menu Bar**
-
-**Side Bar**
-
-### Comparisons
 
 ### List of Updated Pages
 [news/press-releases](http://kp646576.github.io/Free-Geek-Prototype/news/press-releases)  
