@@ -26,4 +26,13 @@ One day while browsing Free Geek's website I had noticed that their main page ha
 [volunteer/build-program](http://kp646576.github.io/Free-Geek-Prototype/volunteer/build-program)  
 [volunteer/what-you-get](http://kp646576.github.io/Free-Geek-Prototype/volunteer/what-you-get)  
 [volunteer/internships](http://kp646576.github.io/Free-Geek-Prototype/volunteer/internships)  
-[volunteer/internships/descriptions](http://kp646576.github.io/Free-Geek-Prototype/volunteer/internships/descriptions)  
+[volunteer/internships/descriptions](http://kp646576.github.io/Free-Geek-Prototype/volunteer/internships/descriptions)
+
+### How to Run Locally
+1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
+    * Quick Install:
+    * ```gem install jeykyll```
+2. From the project root directory use the following command:
+    * ```jekyll --config _dev_config.yml ```
+    * NOTE: _dev_config.yml assumes the local server is running at http://127.0.0.1:4000/
+3. Proceed to http://127.0.0.1:4000/ from a web browser
