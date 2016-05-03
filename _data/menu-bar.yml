@@ -1,0 +1,71 @@
+- title: News
+  id: news
+  dropdown: 
+    - name: Press Releases
+      suburl: "/news/press-releases"
+    - name: Events
+      suburl: /news/events
+    - name: Media Coverage
+      suburl: /news/media-coverage
+    - name: Awards
+      suburl: /news/awards
+    - name: Jobs
+      suburl: /news/jobs
+    - name: Thrift Store
+      suburl: /news/thrift-store
+    - name: Opportunities
+      suburl: /volunteer/internships
+- title: Give
+  id: give
+  dropdown: 
+    - name: Data Security
+      suburl: /donate/security
+    - name: Oregon E-Cycles
+      suburl: /donate/ecycles
+    - name: What We Take
+      suburl: /donate/what-we-take
+- title: Get
+  id: get
+  dropdown: 
+    - name: Grants
+      suburl: /about/grants
+    - name: Oregon E-Cycles
+      suburl: /donate/ecycles
+    - name: Computers
+      suburl: /about/education/plug-into-portland
+    - name: Tech Support
+      suburl: /about/techsupport
+- title: Shop
+  id: shop
+  dropdown: 
+    - name: eBay
+      suburl: http://www.ebay.com/sch/freegeek_portland/m.html
+    - name: Amazon
+      suburl: "http://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A1RPKEISTQZV0N&merchant=A1RPKEISTQZV0N&redirect=true"
+    - name: Shirts
+      suburl: http://www.cafepress.com/freegeekmothership
+- title: Volunteer
+  id: volunteer
+  dropdown: 
+    - name: Get Started!
+      suburl: /volunteer/get-started
+    - name: Adoption Program
+      suburl: /volunteer/adoption-program
+    - name: Computers
+      suburl: /about/education/plug-into-portland
+    - name: Build Program
+      suburl: /volunteer/build-program
+    - name: "Internships & Other Volunteer Opportunities"
+      suburl: /volunteer/internships
+    - name: What You Get
+      suburl: /volunteer/what-you-get
+- title: Learn
+  id: learn
+  dropdown: 
+    - name: Upcoming Classes
+      suburl: /about/classes
+- title: Contact
+  id: connect 
+- title: Donate!
+  id: donate
+  suburl: /donate

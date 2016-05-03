@@ -10,62 +10,29 @@
                 </ul>
                 <section class="top-bar-section">
                     <ul class="right" id="menu">
-                        <li class="has-dropdown" data-magellan-arrival="news">
-                            <a href="{{ site.url }}/#news">News</a>
-                            <ul class="dropdown">
-                                <li><a href="{{ site.url }}/news/press-releases">Press Releases</a></li>
-                                <li><a href="{{ site.url }}/news/events">Events</a></li>
-                                <li><a href="{{ site.url }}/news/media-coverage">Media Coverage</a></li>
-                                <li><a href="{{ site.url }}/news/awards">Awards</a></li>
-                                <li><a href="{{ site.url }}/news/jobs">Jobs</a></li>
-                                <li><a href="{{ site.url }}/news/thrift-store">Thrift Store</a></li>
-                                <li><a href="{{ site.url }}/volunteer/internships">Opportunities</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="give">
-                            <a href="{{ site.url }}/#give">Give</a>
-                            <ul class="dropdown">
-                                <li><a href="{{ site.url }}/donate/security">Data Security</a></li>
-                                <li><a href="{{ site.url }}/donate/ecycles">Oregon E-Cycles</a></li>
-                                <li><a href="{{ site.url }}/donate/what-we-take">What We Take</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="get">
-                            <a href="{{ site.url }}/#get">Get</a>
-                            <ul class="dropdown">
-                                <li><a href="{{ site.url }}/about/grants">Grants</a></li>
-                                <li><a href="{{ site.url }}/about/education/plug-into-portland">Computers</a></li>
-                                <li><a href="{{ site.url }}/about/techsupport">Tech Support</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="shop">
-                            <a href="{{ site.url }}/#shop">Shop</a>
-                            <ul class="dropdown">
-                                <li><a href="http://www.ebay.com/sch/freegeek_portland/m.html">eBay</a></li>
-                                <li><a href="http://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A1RPKEISTQZV0N&merchant=A1RPKEISTQZV0N&redirect=true">Amazon</a></li>
-                                <li><a href="http://www.cafepress.com/freegeekmothership">Shirts</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="volunteer">
-                            <a href="{{ site.url }}/#volunteer">Volunteer</a>
-                            <ul class="dropdown">
-                                <li><a href="{{ site.url }}/volunteer/get-started">Get Started!</a></li>
-                                <li><a href="{{ site.url }}/volunteer/adoption-program">Adoption Program</a></li>
-                                <li><a href="{{ site.url }}/volunteer/build-program">Build Program</a></li>
-                                <li><a href="{{ site.url }}/volunteer/internships">Internships & Other Volunteer Opportunities</a></li>
-                                <li><a href="{{ site.url }}/volunteer/what-you-get">What You Get</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="learn">
-                            <a href="{{ site.url }}/#learn">Learn</a>
-                            <ul class="dropdown">
-                                <li><a href="{{ site.url }}/about/classes">Upcoming Classes</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="connect">
-                            <a href="{{ site.url }}/#connect">Connect</a>
-                        </li>
-                        <li><a class="button radius" href="{{ site.url }}/donate">Donate!</a></li>
+                        {% for i in site.data.menu-bar %}
+                            <!-- Donate Button -->
+                            {% if i.id == "donate" %}
+                                <li><a class="button radius" href="{{ site.url }}{{ i.suburl }}">{{ i.title }}</a></li>
+                            {% else %}
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival={{ i.id }}>
+                                        <a>{{ i.title }}</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="{{ site.url }}/#{{ i.id }}"> {{ i.title }} </a></li>
+                                        {% for dd in i.dropdown %}
+                                            <!-- Extneral Links -->
+                                            {% if i.id == "shop" %} 
+                                                <li><a href="{{ dd.suburl }}">{{ dd.name }}</a></li>
+                                            {% else %}
+                                                <li><a href="{{ site.url }}{{ dd.suburl }}">{{ dd.name }}</a></li>
+                                            {% endif %} 
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                     </ul>
                 </section>
             </nav>

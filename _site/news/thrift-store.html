@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="http://127.0.0.1:4000//css/foundation.min.css" />
     <link rel="stylesheet" href="http://127.0.0.1:4000//css/style.css" />
     <link rel="stylesheet" href="http://127.0.0.1:4000//css/ie.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:4000//css/my/my-css.css" />
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:600' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="http://127.0.0.1:4000//img/favicon.ico">
@@ -20,61 +21,20 @@
     <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:4000//img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:4000//img/apple-touch-icon-114x114.png">
     <style>
-.tab li {
-        margin-left: 2em;
-    }
-    
-    .feature-col {
-        display: block;
-        margin-top: 220px !important;
-        margin-left: -100px;
-    }
-    
-    .sidebar-container {
-        position: fixed;
-    }
-    
-    .sidebar-wrapper {
-        position: relative;
-        top: 120px;
-        left: -100px;
-    }
-    
-    .sidebar {
-        display: block;
-        font-size: 15px;
-    }
-    
-    .content {
-        margin-left: 200px;
-    }
-    
-    @media (max-width: 1200px) {
-        .sidebar {
-            display: none;
-        }
-        .feature-col {
-            display: none;
-        }
-        .content {
-            margin-left: 20px;
-        }
-    }
-    
-    .active a {
-        color: #4e97cc !important;
-    }
-
     /* 
     Anchor Tag Positioning: http://nicolasgallagher.com/jump-links-and-viewport-positioning/
     */
+    
     .section:before {
         content: "";
         display: block;
         height: 20px;
         margin: -10px 0 0;
     }
-}
+    
+    .mystyle li a{
+        line-height: 20px !important; 
+    }
     </style>
 </head>
 
@@ -93,68 +53,230 @@
                 </ul>
                 <section class="top-bar-section">
                     <ul class="right" id="menu">
-                        <li class="has-dropdown" data-magellan-arrival="news">
-                            <a href="http://127.0.0.1:4000//#news">News</a>
-                            <ul class="dropdown">
-                                <li><a href="http://127.0.0.1:4000//news/press-releases">Press Releases</a></li>
-                                <li><a href="http://127.0.0.1:4000//news/events">Events</a></li>
-                                <li><a href="http://127.0.0.1:4000//news/media-coverage">Media Coverage</a></li>
-                                <li><a href="http://127.0.0.1:4000//news/awards">Awards</a></li>
-                                <li><a href="http://127.0.0.1:4000//news/jobs">Jobs</a></li>
-                                <li><a href="http://127.0.0.1:4000//news/thrift-store">Thrift Store</a></li>
-                                <li><a href="http://127.0.0.1:4000//volunteer/internships">Opportunities</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="give">
-                            <a href="http://127.0.0.1:4000//#give">Give</a>
-                            <ul class="dropdown">
-                                <li><a href="http://127.0.0.1:4000//donate/security">Data Security</a></li>
-                                <li><a href="http://127.0.0.1:4000//donate/ecycles">Oregon E-Cycles</a></li>
-                                <li><a href="http://127.0.0.1:4000//donate/what-we-take">What We Take</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="get">
-                            <a href="http://127.0.0.1:4000//#get">Get</a>
-                            <ul class="dropdown">
-                                <li><a href="http://127.0.0.1:4000//about/grants">Grants</a></li>
-                                <li><a href="http://127.0.0.1:4000//about/education/plug-into-portland">Computers</a></li>
-                                <li><a href="http://127.0.0.1:4000//about/techsupport">Tech Support</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="shop">
-                            <a href="http://127.0.0.1:4000//#shop">Shop</a>
-                            <ul class="dropdown">
-                                <li><a href="http://www.ebay.com/sch/freegeek_portland/m.html">eBay</a></li>
-                                <li><a href="http://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A1RPKEISTQZV0N&merchant=A1RPKEISTQZV0N&redirect=true">Amazon</a></li>
-                                <li><a href="http://www.cafepress.com/freegeekmothership">Shirts</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="volunteer">
-                            <a href="http://127.0.0.1:4000//#volunteer">Volunteer</a>
-                            <ul class="dropdown">
-                                <li><a href="http://127.0.0.1:4000//volunteer/get-started">Get Started!</a></li>
-                                <li><a href="http://127.0.0.1:4000//volunteer/adoption-program">Adoption Program</a></li>
-                                <li><a href="http://127.0.0.1:4000//volunteer/build-program">Build Program</a></li>
-                                <li><a href="http://127.0.0.1:4000//volunteer/internships">Internships & Other Volunteer Opportunities</a></li>
-                                <li><a href="http://127.0.0.1:4000//volunteer/what-you-get">What You Get</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="learn">
-                            <a href="http://127.0.0.1:4000//#learn">Learn</a>
-                            <ul class="dropdown">
-                                <li><a href="http://127.0.0.1:4000//about/classes">Upcoming Classes</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-dropdown" data-magellan-arrival="connect">
-                            <a href="http://127.0.0.1:4000//#connect">Connect</a>
-                        </li>
-                        <li><a class="button radius" href="http://127.0.0.1:4000//donate">Donate!</a></li>
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=news>
+                                        <a>News</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#news"> News </a></li>
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//news/press-releases">Press Releases</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//news/events">Events</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//news/media-coverage">Media Coverage</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//news/awards">Awards</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//news/jobs">Jobs</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//news/thrift-store">Thrift Store</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//volunteer/internships">Opportunities</a></li>
+                                             
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=give>
+                                        <a>Give</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#give"> Give </a></li>
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//donate/security">Data Security</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//donate/ecycles">Oregon E-Cycles</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//donate/what-we-take">What We Take</a></li>
+                                             
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=get>
+                                        <a>Get</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#get"> Get </a></li>
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//about/grants">Grants</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//donate/ecycles">Oregon E-Cycles</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//about/education/plug-into-portland">Computers</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//about/techsupport">Tech Support</a></li>
+                                             
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=shop>
+                                        <a>Shop</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#shop"> Shop </a></li>
+                                        
+                                            <!-- Extneral Links -->
+                                             
+                                                <li><a href="http://www.ebay.com/sch/freegeek_portland/m.html">eBay</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                             
+                                                <li><a href="http://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&me=A1RPKEISTQZV0N&merchant=A1RPKEISTQZV0N&redirect=true">Amazon</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                             
+                                                <li><a href="http://www.cafepress.com/freegeekmothership">Shirts</a></li>
+                                             
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=volunteer>
+                                        <a>Volunteer</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#volunteer"> Volunteer </a></li>
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//volunteer/get-started">Get Started!</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//volunteer/adoption-program">Adoption Program</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//about/education/plug-into-portland">Computers</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//volunteer/build-program">Build Program</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//volunteer/internships">Internships & Other Volunteer Opportunities</a></li>
+                                             
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//volunteer/what-you-get">What You Get</a></li>
+                                             
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=learn>
+                                        <a>Learn</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#learn"> Learn </a></li>
+                                        
+                                            <!-- Extneral Links -->
+                                            
+                                                <li><a href="http://127.0.0.1:4000//about/classes">Upcoming Classes</a></li>
+                                             
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li class="has-dropdown">
+                                    <div data-magellan-arrival=connect>
+                                        <a>Contact</a>
+                                    </div>
+                                    <ul class="dropdown mystyle">
+                                        <li> <a href="http://127.0.0.1:4000//#connect"> Contact </a></li>
+                                        
+                                    </ul>
+                                </li>
+                            
+                        
+                            <!-- Donate Button -->
+                            
+                                <li><a class="button radius" href="http://127.0.0.1:4000//donate">Donate!</a></li>
+                            
+                        
                     </ul>
                 </section>
             </nav>
         </div>
     </div>
 </div>
+
 
     <div class="page-content">
       <div class="wrapper">

@@ -16,17 +16,19 @@ One day while browsing Free Geek's website I had noticed that their main page ha
 [pickups](http://kp646576.github.io/Free-Geek-Prototype/pickups)  
 [donate](http://kp646576.github.io/Free-Geek-Prototype/donate)  
 [donate/what-we-take](http://kp646576.github.io/Free-Geek-Prototype/donate/what-we-take)  
-[donate/security](http://kp646576.github.io/Free-Geek-Prototype/donate/security) 
-[donate/ecycles](http://kp646576.github.io/Free-Geek-Prototype/donate/ecycles)  
+[donate/security](http://kp646576.github.io/Free-Geek-Prototype/donate/security)  
+[donate/ecycles](http://kp646576.github.io/Free-Geek-Prototype/donate/ecycles) 
+[about/classes](http://kp646576.github.io/Free-Geek-Prototype/about/classes)  
 [about/grants](http://kp646576.github.io/Free-Geek-Prototype/about/grants)  
-[about/education/plug-into-portland](http://kp646576.github.io/Free-Geek-Prototype/about/education)  
+[about/education/plug-into-portland](http://kp646576.github.io/Free-Geek-Prototype/about/education/plug-into-portland)  
 [about/techsupport](http://kp646576.github.io/Free-Geek-Prototype/about/techsupport)  
 [volunteer/get-started](http://kp646576.github.io/Free-Geek-Prototype/volunteer/get-started)  
 [volunteer/adoption-program](http://kp646576.github.io/Free-Geek-Prototype/volunteer/adoption-program)  
 [volunteer/build-program](http://kp646576.github.io/Free-Geek-Prototype/volunteer/build-program)  
 [volunteer/what-you-get](http://kp646576.github.io/Free-Geek-Prototype/volunteer/what-you-get)  
 [volunteer/internships](http://kp646576.github.io/Free-Geek-Prototype/volunteer/internships)  
-[volunteer/internships/descriptions](http://kp646576.github.io/Free-Geek-Prototype/volunteer/internships/descriptions)
+[volunteer/internships/descriptions](http://kp646576.github.io/Free-Geek-Prototype/volunteer/internships/descriptions)  
+**All other pages not listed here link back to the original website**
 
 ### How to Run Locally
 1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
