@@ -1,0 +1,24 @@
+- name: Adoption Class Teaching
+  id: distro
+- name: A / V
+  id: av
+- name: "BETA(Build, Evaluation & Test Area)"
+  id: beta
+- name: Data Security
+  id: sda
+- name: Donations Triage
+  id: receiving
+- name: Mobile Devices Refurbishment
+  id: mobile
+- name: Printer Testing
+  id: printer
+- name: "Reception & Outreach"
+  id: office
+- name: Recycling
+  id: recycling
+- name: Spanish Build Bilingual
+  id: spanishbuild
+- name: Teaching
+  id: teaching
+- name: Technical Support
+  id: techsupport

@@ -12,10 +12,61 @@
     <link rel="apple-touch-icon" href="{{ site.url }}/img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/apple-touch-icon-114x114.png">
-
     <style>
-    .tab li {
+.tab li {
         margin-left: 2em;
     }
+    
+    .feature-col {
+        display: block;
+        margin-top: 220px !important;
+        margin-left: -100px;
+    }
+    
+    .sidebar-container {
+        position: fixed;
+    }
+    
+    .sidebar-wrapper {
+        position: relative;
+        top: 120px;
+        left: -100px;
+    }
+    
+    .sidebar {
+        display: block;
+        font-size: 15px;
+    }
+    
+    .content {
+        margin-left: 200px;
+    }
+    
+    @media (max-width: 1200px) {
+        .sidebar {
+            display: none;
+        }
+        .feature-col {
+            display: none;
+        }
+        .content {
+            margin-left: 20px;
+        }
+    }
+    
+    .active a {
+        color: #4e97cc !important;
+    }
+
+    /* 
+    Anchor Tag Positioning: http://nicolasgallagher.com/jump-links-and-viewport-positioning/
+    */
+    .section:before {
+        content: "";
+        display: block;
+        height: 20px;
+        margin: -10px 0 0;
+    }
+}
     </style>
 </head>
