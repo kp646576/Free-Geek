@@ -42,6 +42,11 @@
 .active a {
     color: #4e97cc !important;
 }
+
+.donate h2 {
+  color: #fcb040  
+}
+
 /*
 .group {
     background: yellow;

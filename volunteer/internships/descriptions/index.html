@@ -3,12 +3,12 @@ layout: default
 ---
 <div class="row">
     <div class="sidebar-container">
-            <ul class="sidebar-wrapper">
+            <ul id="intern-list" class="sidebar-wrapper">
                 <div class="sidebar">Available Internships:</div>
                 {% for internship in site.data.available-internships %}
                 <!-- For magellan fixed  
                 <li class="sidebar" data-magellan-arrival={{ internship.id }}><a href=#{{ internship.id }}>{{ internship.name }}</a></li> -->
-                <li class="sidebar"><a href=#{{ internship.id }}>{{ internship.name }}</a></li>
+                <li id="#stuff" class="sidebar"><a href=#{{ internship.id }}>{{ internship.name }}</a></li>
                 {% endfor %}
             </ul>
     </div>

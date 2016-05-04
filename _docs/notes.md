@@ -1,3 +1,6 @@
+### Routing
+Used folder routing with <folder name> + index.html to remove .html extension when deployed  
+
 ### Key Value Pairs
 ##### Does not work
 ##
