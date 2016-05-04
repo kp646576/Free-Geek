@@ -22,6 +22,8 @@
       suburl: /donate/ecycles
     - name: What We Take
       suburl: /donate/what-we-take
+    - name: Pickups
+      suburl: /pickups
 - title: Get
   id: get
   dropdown: 

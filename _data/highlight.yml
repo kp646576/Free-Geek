@@ -7,6 +7,7 @@
 "security": give
 "ecycles": give
 "what-we-take": give
+"pickups": give
 "grants": get
 "plug-into-portland": get
 "techsupport": get
@@ -14,6 +15,7 @@
 "adoption-program": volunteer
 "build-program": volunteer
 "internships": volunteer
+"descriptions": volunteer
 "what-you-get": volunteer
 "classes": learn
 "donate": donate
