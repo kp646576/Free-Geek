@@ -8,30 +8,48 @@
                     </li>
                     <li class="toggle-topbar menu-icon"><a href="{{ site.url }}/#"><span>Menu</span></a></li>
                 </ul>
+                <!-- Retreive current page url, strip .html, and take value in last array index -->
+                {% assign surl = page.url | remove_first: ".html" | split: "/" %}
+                {% assign idx = surl | size | minus: 1 %}
+                {% assign ex = surl[idx] %}
+                <!-- ---------------------------------------------------------------------------- -->
                 <section class="top-bar-section">
                     <ul class="right" id="menu">
                         {% for i in site.data.menu-bar %}
                             <!-- Donate Button -->
                             {% if i.id == "donate" %}
-                                <li><a class="button radius" href="{{ site.url }}{{ i.suburl }}">{{ i.title }}</a></li>
+                                <!-- Highlight menu bar -->
+                                {% if i.id == site.data.highlight[ex] %}
+                                    <li><a style="color: #4e97cc !important;" class="button radius" href="{{ site.url }}{{ i.suburl }}">{{ i.title }}</a></li>
+                                {% else %}
+                                    <li><a class="button radius" href="{{ site.url }}{{ i.suburl }}">{{ i.title }}</a></li>
+                                {% endif %}
+                                <!-- End Highlight menu bar -->
                             {% else %}
                                 <li class="has-dropdown">
                                     <div data-magellan-arrival={{ i.id }}>
-                                        <a>{{ i.title }}</a>
+                                        <!-- Highlight menu bar -->
+                                        {% if i.id == site.data.highlight[ex] %}
+                                            <a style="color: #4e97cc !important;" href="{{ site.url }}/#{{ i.id }}">{{ i.title }}</a>
+                                        {% else %}
+                                            <a href="{{ site.url }}/#{{ i.id }}">{{ i.title }}</a>
+                                        {% endif %}
+                                        <!-- End Highlight menu bar -->
                                     </div>
                                     <ul class="dropdown mystyle">
-                                        <li> <a href="{{ site.url }}/#{{ i.id }}"> {{ i.title }} </a></li>
                                         {% for dd in i.dropdown %}
-                                            <!-- Extneral Links -->
+                                            <!-- Extenral Links -->
                                             {% if i.id == "shop" %} 
                                                 <li><a href="{{ dd.suburl }}">{{ dd.name }}</a></li>
                                             {% else %}
                                                 <li><a href="{{ site.url }}{{ dd.suburl }}">{{ dd.name }}</a></li>
-                                            {% endif %} 
+                                            {% endif %}
+                                            <!-- End Extenral Links -->
                                         {% endfor %}
                                     </ul>
                                 </li>
                             {% endif %}
+                            <!-- End Donate Button -->
                         {% endfor %}
                     </ul>
                 </section>
@@ -39,3 +57,5 @@
         </div>
     </div>
 </div>
+
+  

@@ -13,8 +13,6 @@
       suburl: /news/jobs
     - name: Thrift Store
       suburl: /news/thrift-store
-    - name: Opportunities
-      suburl: /volunteer/internships
 - title: Give
   id: give
   dropdown: 
@@ -29,15 +27,13 @@
   dropdown: 
     - name: Grants
       suburl: /about/grants
-    - name: Oregon E-Cycles
-      suburl: /donate/ecycles
     - name: Computers
       suburl: /about/education/plug-into-portland
     - name: Tech Support
       suburl: /about/techsupport
 - title: Shop
   id: shop
-  dropdown: 
+  dropdown:
     - name: eBay
       suburl: http://www.ebay.com/sch/freegeek_portland/m.html
     - name: Amazon
@@ -51,11 +47,9 @@
       suburl: /volunteer/get-started
     - name: Adoption Program
       suburl: /volunteer/adoption-program
-    - name: Computers
-      suburl: /about/education/plug-into-portland
     - name: Build Program
       suburl: /volunteer/build-program
-    - name: "Internships & Other Volunteer Opportunities"
+    - name: "Internships"
       suburl: /volunteer/internships
     - name: What You Get
       suburl: /volunteer/what-you-get
