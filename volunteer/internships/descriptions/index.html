@@ -1,16 +1,18 @@
 ---
-layout: default
+layout: default 
 ---
 <div class="row">
-    <div class="sidebar-container">
-            <ul id="intern-list" class="sidebar-wrapper">
+
+<div class="sidebar-container">
+        <div class="magellan-override" data-magellan-expedition="fixed">
+            <ul id="intern-list" class="side-nav sidebar-wrapper">
                 <div class="sidebar">Available Internships:</div>
                 {% for internship in site.data.available-internships %}
-                <!-- For magellan fixed  
-                <li class="sidebar" data-magellan-arrival={{ internship.id }}><a href=#{{ internship.id }}>{{ internship.name }}</a></li> -->
-                <li id="#stuff" class="sidebar"><a href=#{{ internship.id }}>{{ internship.name }}</a></li>
+                <!-- For magellan fixed  -->
+                <dd class="sidebar" data-magellan-arrival={{ internship.id }}><a href=#{{ internship.id }}>{{ internship.name }}</a></dd>
                 {% endfor %}
             </ul>
+        </div>
     </div>
     <div class="content">
         <div id="distro" class="section volunteer purple" data-magellan-destination="distro">

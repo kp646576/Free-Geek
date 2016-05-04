@@ -15,7 +15,6 @@
 .sidebar-wrapper {
     position: relative;
     top: 120px;
-    left: -100px;
 }
 
 .sidebar {
@@ -27,7 +26,24 @@
     margin-left: 200px;
 }
 
+.magellan-override {
+    min-width: 0; 
+    margin-left: -100px;
+}
+
 @media (max-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+    .feature-col {
+        display: none;
+    }
+    .content {
+        margin-left: 20px;
+    }
+}
+
+@media (max-height: 460px) {
     .sidebar {
         display: none;
     }
